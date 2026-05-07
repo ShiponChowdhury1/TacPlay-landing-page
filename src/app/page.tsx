@@ -3,7 +3,6 @@
 import HeroSection from "@/components/HeroComponents/HeroSection";
 import DownloadSections from "@/components/DownloadComponents/DownloadSections";
 import FeaturesSections from "@/components/FeaturesComponents/FeaturesSections";
-import HowItWorksSections from "@/components/HowItWorksComponents/HowItWorksSections";
 import ManagementSections from "@/components/ManagementComponents/ManagementSections";
 import PowerFeatureSections from "@/components/PowerFeatureComponents/PowerFeatureSections";
 import FormFindingSections from "@/components/FormFindingComponents/FormFindingSections";
@@ -16,7 +15,6 @@ export default function Home() {
       <HeroSection />
       
       <FeaturesSections />
-      <HowItWorksSections />
       <ManagementSections />
       <PowerFeatureSections />
       <FormFindingSections />

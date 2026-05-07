@@ -54,8 +54,8 @@ const FormFindingSections = () => {
           />
         </MotionReveal>
 
-        <div className="relative mt-32">
-          <MotionStagger className="grid gap-6 md:grid-cols-[minmax(0,1fr)_minmax(0,22rem)_minmax(0,1fr)] md:gap-6 xl:grid-cols-[minmax(0,1fr)_minmax(0,24rem)_minmax(0,1fr)] xl:gap-8">
+        <div className="relative mt-16 md:mt-32">
+          <MotionStagger className="grid grid-cols-1 gap-6 md:grid-cols-[minmax(0,1fr)_minmax(0,22rem)_minmax(0,1fr)] md:gap-6 xl:grid-cols-[minmax(0,1fr)_minmax(0,24rem)_minmax(0,1fr)] xl:gap-8">
             <div className="relative grid gap-6 md:pr-4 xl:pr-8">
               <Image
                 src="/images/left-line.png"
@@ -68,7 +68,7 @@ const FormFindingSections = () => {
               {leftSteps.map((step, index) => (
                 <MotionStaggerItem key={step.number}>
                   <article
-                    className={`relative mr-10 md:mr-14 rounded-[1.75rem] border border-white/10 bg-[linear-gradient(180deg,rgba(16,18,30,0.98)_0%,rgba(10,11,18,0.98)_100%)] p-5 shadow-[0_20px_60px_rgba(0,0,0,0.26)] sm:p-6 ${index === 0 ? "md:mt-6" : "md:mt-1"}`}
+                    className={`relative md:mr-14 rounded-[1.75rem] border border-white/10 bg-[linear-gradient(180deg,rgba(16,18,30,0.98)_0%,rgba(10,11,18,0.98)_100%)] p-5 shadow-[0_20px_60px_rgba(0,0,0,0.26)] sm:p-6 ${index === 0 ? "md:mt-6" : "md:mt-1"}`}
                   >
                     <div className="inline-flex h-11 w-11 items-center justify-center rounded-xl bg-[#c90f18] text-base font-semibold text-white ">
                       {step.number}
@@ -86,8 +86,8 @@ const FormFindingSections = () => {
               ))}
             </div>
 
-            <MotionStaggerItem className="order-first md:order-0">
-              <div className="relative mx-auto flex max-h-80 max-w-60 items-center justify-center sm:max-w-[24rem] lg:min-h-160 lg:max-w-[24rem]">
+            <MotionStaggerItem className="hidden md:block md:order-0">
+              <div className="relative mx-auto flex items-center justify-center sm:max-w-[24rem] lg:min-h-160 lg:max-w-[24rem]">
                 
                 <div className="relative w-full overflow-hidden ">
                   <Image
@@ -113,7 +113,7 @@ const FormFindingSections = () => {
               {rightSteps.map((step, index) => (
                 <MotionStaggerItem key={step.number}>
                   <article
-                    className={`relative ml-10 md:ml-14 rounded-[1.75rem] border border-white/10 bg-[linear-gradient(180deg,rgba(16,18,30,0.98)_0%,rgba(10,11,18,0.98)_100%)] p-5 shadow-[0_20px_60px_rgba(0,0,0,0.26)] sm:p-6 ${index === 0 ? "md:mt-1" : "md:mt-6"}`}
+                    className={`relative md:ml-14 rounded-[1.75rem] border border-white/10 bg-[linear-gradient(180deg,rgba(16,18,30,0.98)_0%,rgba(10,11,18,0.98)_100%)] p-5 shadow-[0_20px_60px_rgba(0,0,0,0.26)] sm:p-6 ${index === 0 ? "md:mt-1" : "md:mt-6"}`}
                   >
                     <div className="inline-flex h-11 w-11 items-center justify-center rounded-xl bg-[#c90f18] text-base font-semibold text-white ">
                       {step.number}

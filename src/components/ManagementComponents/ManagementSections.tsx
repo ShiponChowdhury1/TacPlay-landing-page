@@ -63,133 +63,162 @@ const ManagementSections = () => {
 
         <MotionStagger className="mt-10 grid grid-cols-1 gap-4 sm:mt-12 sm:gap-5 lg:grid-cols-12 lg:gap-5">
           <MotionStaggerItem className="lg:col-span-7">
-            <article className="group p-4 md:p-8 h-full overflow-hidden rounded-[1.7rem] border border-[#c21422]/80 bg-[linear-gradient(180deg,rgba(11,14,28,0.98)_0%,rgba(7,9,19,0.98)_100%)] shadow-[0_20px_56px_rgba(0,0,0,0.5)]">
-              <div className="relative p-2 rounded-xl bg-black border-t border-l border-r border-gray-700 aspect-video w-full overflow-hidden">
-                <Image
-                  src="/images/paintball-management-1.png"
-                  alt="Manage Your Field Dashboard"
-                  width={2000}
-                  height={3000}
-                  sizes="(max-width: 1024px) 100vw, 58vw"
-                  className="object-cover object-center transition duration-700 group-hover:scale-[1.02]"
-                />
-                <div className="pointer-events-none absolute inset-x-0 bottom-0 h-16 bg-[linear-gradient(180deg,rgba(8,10,19,0)_0%,rgba(8,10,19,0.9)_100%)]" />
-                
-              </div>
-              <div className="text-center ">
-                <h3 className="text-xl md:text-2xl font-semibold text-white sm:text-[1.7rem]">
-                  Manage Your Field Dashboard
-                </h3>
-                <p className="mx-auto mt-2 max-w-md text-sm leading-5 text-[#8f95b7] sm:text-[15px]">
-                  Access a powerful dashboard to monitor bookings, sessions, and revenue in real time.Track performance and manage your paintball operations effortlessly.
-                </p>
-              </div>
-            </article>
+            <div
+              className="relative rounded-[1.7rem] p-[1.5px] overflow-hidden h-full"
+              style={{
+                background:
+                  "linear-gradient(116.34deg, #FF3131 2.32%, rgba(12, 12, 12, 0.2) 50.85%, #FF3131 95.78%)",
+              }}
+            >
+              <article className="group p-4 md:p-8 h-full overflow-hidden rounded-[calc(1.7rem-1.5px)] bg-[linear-gradient(180deg,rgba(11,14,28,0.98)_0%,rgba(7,9,19,0.98)_100%)] shadow-[0_20px_56px_rgba(0,0,0,0.5)]">
+                <div className="relative p-2 rounded-xl bg-black border-t border-l border-r border-gray-700 aspect-video w-full overflow-hidden">
+                  <Image
+                    src="/images/paintball-management-1.png"
+                    alt="Manage Your Field Dashboard"
+                    width={2000}
+                    height={3000}
+                    sizes="(max-width: 1024px) 100vw, 58vw"
+                    className="object-cover object-center transition duration-700 group-hover:scale-[1.02]"
+                  />
+                  <div className="pointer-events-none absolute inset-x-0 bottom-0 h-16 bg-[linear-gradient(180deg,rgba(8,10,19,0)_0%,rgba(8,10,19,0.9)_100%)]" />
+                </div>
+                <div className="text-center ">
+                  <h3 className="text-xl md:text-2xl font-semibold text-white sm:text-[1.7rem]">
+                    Manage Your Field Dashboard
+                  </h3>
+                  <p className="mx-auto mt-2 max-w-md text-sm leading-5 text-[#8f95b7] sm:text-[15px]">
+                    Access a powerful dashboard to monitor bookings, sessions, and revenue in real time.Track performance and manage your paintball operations effortlessly.
+                  </p>
+                </div>
+              </article>
+            </div>
           </MotionStaggerItem>
 
           <MotionStaggerItem className="lg:col-span-5">
-            <article className="h-full overflow-hidden rounded-[1.7rem] border border-[#c21422]/80 bg-[linear-gradient(180deg,rgba(12,15,30,0.98)_0%,rgba(8,9,18,0.98)_100%)] pt-4 shadow-[0_20px_56px_rgba(0,0,0,0.5)] sm:pt-5">
-              <div className="text-center">
-                <h3 className="text-xl md:text-2xl font-semibold text-white sm:text-[1.7rem]">
-                  Track Booking Activity
-                </h3>
-                <p className="mx-auto mt-2 max-w-md text-sm leading-5 text-[#8f95b7] sm:text-[15px]">
-                  Analyze where your bookings come from and understand player
-                  activity to improve field performance and engagement.
-                </p>
-              </div>
+            <div
+              className="relative rounded-[1.7rem] p-[1.5px] overflow-hidden h-full"
+              style={{
+                background:
+                  "linear-gradient(116.34deg, #FF3131 2.32%, rgba(12, 12, 12, 0.2) 50.85%, #FF3131 95.78%)",
+              }}
+            >
+              <article className="h-full overflow-hidden rounded-[calc(1.7rem-1.5px)] bg-[linear-gradient(180deg,rgba(12,15,30,0.98)_0%,rgba(8,9,18,0.98)_100%)] pt-4 shadow-[0_20px_56px_rgba(0,0,0,0.5)] sm:pt-5">
+                <div className="text-center">
+                  <h3 className="text-xl md:text-2xl font-semibold text-white sm:text-[1.7rem]">
+                    Track Booking Activity
+                  </h3>
+                  <p className="mx-auto mt-2 max-w-md text-sm leading-5 text-[#8f95b7] sm:text-[15px]">
+                    Analyze where your bookings come from and understand player
+                    activity to improve field performance and engagement.
+                  </p>
+                </div>
 
-              <div className="mt-22 ml-8 md:ml-16 overflow-hidden rounded-[1.2rem]  bg-[#0a0d1b] ">
-                <Image
-                  src="/images/paintball-management-2.png"
-                  alt="Booking Trends Graph"
-                  width={9000}
-                  height={9000}
-                  className="object-cover object-center"
-                />
-
-               
-              </div>
-            </article>
+                <div className="mt-22 ml-8 md:ml-16 overflow-hidden rounded-[1.2rem]  bg-[#0a0d1b] ">
+                  <Image
+                    src="/images/paintball-management-2.png"
+                    alt="Booking Trends Graph"
+                    width={9000}
+                    height={9000}
+                    className="object-cover object-center"
+                  />
+                </div>
+              </article>
+            </div>
           </MotionStaggerItem>
 
           <MotionStaggerItem className="lg:col-span-4">
-            <article className="h-full overflow-hidden rounded-[1.7rem] border border-[#c21422]/80 bg-[linear-gradient(180deg,rgba(12,15,30,0.98)_0%,rgba(8,9,18,0.98)_100%)] p-4 shadow-[0_20px_56px_rgba(0,0,0,0.5)] sm:p-5">
-              <h3 className="text-center text-xl md:text-2xl font-semibold leading-tight text-white sm:text-[1.7rem]">
-                Monitor Session Performance
-              </h3>
-              <p className="mx-auto mt-2 max-w-sm text-center text-sm leading-5 text-[#8f95b7] sm:text-[15px]">
-                View session distribution, match types, and participation levels
-                to keep your field running smoothly.
-              </p>
+            <div
+              className="relative rounded-[1.7rem] p-[1.5px] overflow-hidden h-full"
+              style={{
+                background:
+                  "linear-gradient(116.34deg, #FF3131 2.32%, rgba(12, 12, 12, 0.2) 50.85%, #FF3131 95.78%)",
+              }}
+            >
+              <article className="h-full overflow-hidden rounded-[calc(1.7rem-1.5px)] bg-[linear-gradient(180deg,rgba(12,15,30,0.98)_0%,rgba(8,9,18,0.98)_100%)] p-4 shadow-[0_20px_56px_rgba(0,0,0,0.5)] sm:p-5">
+                <h3 className="text-center text-xl md:text-2xl font-semibold leading-tight text-white sm:text-[1.7rem]">
+                  Monitor Session Performance
+                </h3>
+                <p className="mx-auto mt-2 max-w-sm text-center text-sm leading-5 text-[#8f95b7] sm:text-[15px]">
+                  View session distribution, match types, and participation levels
+                  to keep your field running smoothly.
+                </p>
 
-              <div className="relative mt-8 flex items-center justify-center">
-                <ResponsiveContainer width="100%" height={280}>
-                  <PieChart>
-                    <Pie
-                      data={sessionPerformanceData}
-                      cx="50%"
-                      cy="50%"
-                      innerRadius={60}
-                      outerRadius={90}
-                      paddingAngle={2}
-                      cornerRadius={12}
-                      dataKey="value"
-                      startAngle={90}
-                      endAngle={-270}
-                      stroke="none"
-                    >
-                      {sessionPerformanceData.map((entry, index) => (
-                        <Cell key={`cell-${index}`} fill={entry.fill} />
-                      ))}
-                    </Pie>
-                  </PieChart>
-                </ResponsiveContainer>
+                <div className="relative mt-8 flex items-center justify-center">
+                  <ResponsiveContainer width="100%" height={280}>
+                    <PieChart>
+                      <Pie
+                        data={sessionPerformanceData}
+                        cx="50%"
+                        cy="50%"
+                        innerRadius={60}
+                        outerRadius={90}
+                        paddingAngle={2}
+                        cornerRadius={12}
+                        dataKey="value"
+                        startAngle={90}
+                        endAngle={-270}
+                        stroke="none"
+                      >
+                        {sessionPerformanceData.map((entry, index) => (
+                          <Cell key={`cell-${index}`} fill={entry.fill} />
+                        ))}
+                      </Pie>
+                    </PieChart>
+                  </ResponsiveContainer>
 
-                <div className="absolute inset-0 flex flex-col items-center justify-center">
-                  <p className="text-4xl font-semibold leading-none text-white sm:text-5xl">
-                    68
-                  </p>
-                  <p className="mt-2 text-lg font-medium leading-none text-white sm:text-xl">
-                    Sessions
-                  </p>
+                  <div className="absolute inset-0 flex flex-col items-center justify-center">
+                    <p className="text-4xl font-semibold leading-none text-white sm:text-5xl">
+                      68
+                    </p>
+                    <p className="mt-2 text-lg font-medium leading-none text-white sm:text-xl">
+                      Sessions
+                    </p>
+                  </div>
+
+                  <div className="absolute bottom-[20%] left-[8%] rounded-full border-2 border-[#f3cf06]/40 bg-[#f3cf06] px-3 py-1.5 text-center sm:px-4 sm:py-2">
+                    <p className="text-[12px] font-bold leading-none text-[#161616] sm:text-[13px]">
+                      2,568
+                    </p>
+                  </div>
+
+                  <div className="absolute right-[8%] top-[28%] rounded-full border-2 border-[#d01925]/40 bg-[#ffffff] px-3 py-1.5 text-center sm:px-4 sm:py-2">
+                    <p className="text-[12px] font-bold leading-none text-[#d01925] sm:text-[13px]">
+                      2,568
+                    </p>
+                  </div>
                 </div>
-
-                <div className="absolute bottom-[20%] left-[8%] rounded-full border-2 border-[#f3cf06]/40 bg-[#f3cf06] px-3 py-1.5 text-center sm:px-4 sm:py-2">
-                  <p className="text-[12px] font-bold leading-none text-[#161616] sm:text-[13px]">
-                    2,568
-                  </p>
-                </div>
-
-                <div className="absolute right-[8%] top-[28%] rounded-full border-2 border-[#d01925]/40 bg-[#ffffff] px-3 py-1.5 text-center sm:px-4 sm:py-2">
-                  <p className="text-[12px] font-bold leading-none text-[#d01925] sm:text-[13px]">
-                    2,568
-                  </p>
-                </div>
-              </div>
-            </article>
+              </article>
+            </div>
           </MotionStaggerItem>
 
           <MotionStaggerItem className="lg:col-span-8">
-            <article className="group pt-4 md:pt-6  overflow-hidden rounded-[1.7rem] border border-[#c21422]/80 bg-[linear-gradient(180deg,rgba(11,14,28,0.98)_0%,rgba(7,9,19,0.98)_100%)] shadow-[0_20px_56px_rgba(0,0,0,0.5)]">
-              <div className="relative  aspect-video max-h-95 w-full overflow-hidden rounded-xl">
-                <Image
-                  src="/images/paintball-management-3.png"
-                  alt="Manage Matches and Results"
-                  fill
-                  sizes="(max-width: 600px) 100vw, 66vw"
-                  className="max-h-94 object-center transition duration-700 "
-                />
-              </div>
-              <div className="py-4 md:py-6 text-center">
-                <h3 className="text-xl md:text-2xl font-semibold text-white sm:text-[1.7rem]">
-                  Manage Matches & Results
-                </h3>
-                <p className="mx-auto mt-2 max-w-md text-sm leading-5 text-[#8f95b7] sm:text-[15px]">
-                  Access a powerful dashboard to monitor bookings, sessions, and revenue in real time. Track performance and manage your paintball operations effortlessly.
-                </p>
-              </div>
-            </article>
+            <div
+              className="relative rounded-[1.7rem] p-[1.5px] overflow-hidden h-full"
+              style={{
+                background:
+                  "linear-gradient(116.34deg, #FF3131 2.32%, rgba(12, 12, 12, 0.2) 50.85%, #FF3131 95.78%)",
+              }}
+            >
+              <article className="group pt-4 md:pt-6 h-full overflow-hidden rounded-[calc(1.7rem-1.5px)] bg-[linear-gradient(180deg,rgba(11,14,28,0.98)_0%,rgba(7,9,19,0.98)_100%)] shadow-[0_20px_56px_rgba(0,0,0,0.5)]">
+                <div className="relative  aspect-video max-h-95 w-full overflow-hidden rounded-xl">
+                  <Image
+                    src="/images/paintball-management-3.png"
+                    alt="Manage Matches and Results"
+                    fill
+                    sizes="(max-width: 600px) 100vw, 66vw"
+                    className="max-h-94 object-center transition duration-700 "
+                  />
+                </div>
+                <div className="py-4 md:py-6 text-center">
+                  <h3 className="text-xl md:text-2xl font-semibold text-white sm:text-[1.7rem]">
+                    Manage Matches & Results
+                  </h3>
+                  <p className="mx-auto mt-2 max-w-md text-sm leading-5 text-[#8f95b7] sm:text-[15px]">
+                    Access a powerful dashboard to monitor bookings, sessions, and revenue in real time. Track performance and manage your paintball operations effortlessly.
+                  </p>
+                </div>
+              </article>
+            </div>
           </MotionStaggerItem>
         </MotionStagger>
       </div>

@@ -171,7 +171,7 @@ const CompetetivePaintballSections = () => {
           {testimonials.map((testimonial, index) => (
             <MotionStaggerItem
               key={`${testimonial.name}-${testimonial.location}`}
-              className="flex-none snap-center px-2 sm:px-3 md:basis-[52%] lg:basis-[40%] xl:basis-[32%]"
+              className="flex-none snap-center basis-[82%] px-2 sm:basis-[70%] sm:px-3 md:basis-[52%] lg:basis-[40%] xl:basis-[32%]"
             >
               <article
                 ref={(element) => {
