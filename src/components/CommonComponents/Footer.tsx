@@ -109,12 +109,15 @@ const Footer = () => {
               </a>
             </div>
 
-            <div className="flex gap-6">
+            <div className="flex flex-wrap justify-center gap-x-6 gap-y-2">
               <Link href="/privacy" className="text-sm text-secondary underline hover:text-primary">
                 Privacy Policy
               </Link>
               <Link href="/terms" className="text-sm text-secondary underline hover:text-primary">
                 Terms of Service
+              </Link>
+              <Link href="/owner" className="text-sm text-secondary underline hover:text-primary">
+                Owner Agreement
               </Link>
               <Link href="/cookies" className="text-sm text-secondary underline hover:text-primary">
                 Cookie Settings

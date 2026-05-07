@@ -95,8 +95,8 @@ const PowerFeatureSections = () => {
           <SectionHeading
             title="Built to Power the Future of Competitive Paintball"
             description="A platform designed to simplify field management, improve match organization, and connect paintball players around the world."
-            className="max-w-4xl"
-            descriptionClassName="max-w-3xl"
+            className="max-w-4xl text-center"
+            descriptionClassName="max-w-3xl mx-auto"
           />
         </MotionReveal>
 

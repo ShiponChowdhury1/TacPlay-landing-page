@@ -63,181 +63,269 @@ const CookieSettings = () => {
       <div className="mx-auto max-w-4xl px-4 py-12 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="mb-12">
-          <Link href="#" className="text-primary hover:text-primary/80 mb-6 inline-block">
+          <Link href="/" className="text-primary hover:text-primary/80 mb-6 inline-block">
             ← Back
           </Link>
-          <h1 className="text-4xl font-bold text-white mb-2">Cookie Settings</h1>
-          <p className="text-secondary">Manage your cookie preferences</p>
+          <h1 className="mb-2 text-4xl font-bold text-white">Cookie Policy</h1>
+          <p className="text-secondary">Last Updated: 1st May 2026</p>
+          <p className="mt-2 text-secondary">Company: TACPLAY EUROPE S.L.</p>
+          <p className="text-secondary">Website/App: www.tacplay.eu</p>
         </div>
 
         {/* Content */}
-        <div className="space-y-8">
-          {/* Introduction */}
-          <section className="text-secondary">
-            <h2 className="text-2xl font-bold text-white mb-4">What are Cookies?</h2>
+        <div className="space-y-8 text-secondary">
+          <section>
+            <h2 className="mb-4 text-2xl font-bold text-white">1. INTRODUCTION</h2>
             <p>
-              Cookies are small files stored on your device that help us provide a better experience. We use different types of cookies for various purposes.
+              This Cookie Policy explains how TACPLAY (&ldquo;we&rdquo;, &ldquo;us&rdquo;, &ldquo;our&rdquo;) uses cookies and similar technologies when you use our Platform.
             </p>
+            <p className="mt-4">We comply with:</p>
+            <ul className="mt-4 list-disc space-y-2 pl-5">
+              <li>General Data Protection Regulation</li>
+              <li>ePrivacy Directive</li>
+            </ul>
+            <p className="mt-4">By continuing to use TACPLAY, you will be asked to consent to the use of cookies as described in this Policy.</p>
           </section>
 
-          {/* Cookie Categories */}
-          <section className="space-y-6">
-            <h2 className="text-2xl font-bold text-white">Cookie Categories</h2>
+          <section>
+            <h2 className="mb-4 text-2xl font-bold text-white">2. WHAT ARE COOKIES?</h2>
+            <p>Cookies are small text files stored on your device when you visit a website or use an app.</p>
+            <p className="mt-4">They help us:</p>
+            <ul className="mt-4 list-disc space-y-2 pl-5">
+              <li>Ensure the Platform works correctly</li>
+              <li>Improve user experience</li>
+              <li>Analyse performance</li>
+            </ul>
+          </section>
 
-            {/* Necessary Cookies */}
-            <div className="p-6 rounded-lg border border-background/60 bg-background/40">
-              <div className="flex items-start justify-between mb-4">
-                <div className="flex-1">
-                  <h3 className="text-lg font-semibold text-white mb-2">Necessary Cookies</h3>
-                  <p className="text-sm text-secondary">
-                    Essential for the website to function. These cookies are required for security, account management, and basic functionality. Cannot be disabled.
-                  </p>
-                </div>
-                <div className="ml-4">
-                  <input
-                    type="checkbox"
-                    checked={cookies.necessary}
-                    disabled
-                    className="w-6 h-6 accent-primary cursor-not-allowed"
-                  />
-                </div>
-              </div>
-              <div className="text-xs text-secondary/60 bg-black/30 p-3 rounded">
-                <p><strong>Examples:</strong> Session tokens, authentication, security</p>
-              </div>
-            </div>
+          <section>
+            <h2 className="mb-4 text-2xl font-bold text-white">3. TYPES OF COOKIES WE USE</h2>
 
-            {/* Analytics Cookies */}
-            <div className="p-6 rounded-lg border border-background/60 bg-background/40 hover:border-primary/30 transition-colors">
-              <div className="flex items-start justify-between mb-4">
-                <div className="flex-1">
-                  <h3 className="text-lg font-semibold text-white mb-2">Analytics Cookies</h3>
-                  <p className="text-sm text-secondary">
-                    Help us understand how you use TACPLAY, including page visits, user flows, and performance metrics. This helps us improve your experience.
-                  </p>
-                </div>
-                <div className="ml-4">
-                  <input
-                    type="checkbox"
-                    checked={cookies.analytics}
-                    onChange={() => handleToggle("analytics")}
-                    className="w-6 h-6 accent-primary cursor-pointer"
-                  />
-                </div>
+            <div className="space-y-5">
+              <div className="rounded-lg border border-background/60 bg-background/40 p-6">
+                <h3 className="mb-2 text-lg font-semibold text-white">3.1 Strictly Necessary Cookies (No Consent Required)</h3>
+                <p>These cookies are essential for the Platform to function.</p>
+                <p className="mt-4">They include:</p>
+                <ul className="mt-4 list-disc space-y-2 pl-5">
+                  <li>Login/authentication</li>
+                  <li>Booking session management</li>
+                  <li>Security and fraud prevention</li>
+                </ul>
+                <p className="mt-4">Without these cookies, TACPLAY cannot operate properly.</p>
               </div>
-              <div className="text-xs text-secondary/60 bg-black/30 p-3 rounded">
-                <p><strong>Examples:</strong> Google Analytics, page load times, user interactions</p>
-              </div>
-            </div>
 
-            {/* Marketing Cookies */}
-            <div className="p-6 rounded-lg border border-background/60 bg-background/40 hover:border-primary/30 transition-colors">
-              <div className="flex items-start justify-between mb-4">
-                <div className="flex-1">
-                  <h3 className="text-lg font-semibold text-white mb-2">Marketing Cookies</h3>
-                  <p className="text-sm text-secondary">
-                    Track your activity to show you personalized ads and marketing content relevant to your interests on TACPLAY and partner sites.
-                  </p>
-                </div>
-                <div className="ml-4">
-                  <input
-                    type="checkbox"
-                    checked={cookies.marketing}
-                    onChange={() => handleToggle("marketing")}
-                    className="w-6 h-6 accent-primary cursor-pointer"
-                  />
-                </div>
+              <div className="rounded-lg border border-background/60 bg-background/40 p-6">
+                <h3 className="mb-2 text-lg font-semibold text-white">3.2 Performance & Analytics Cookies (Consent Required)</h3>
+                <p>Used to understand how users interact with TACPLAY.</p>
+                <p className="mt-4">Examples:</p>
+                <ul className="mt-4 list-disc space-y-2 pl-5">
+                  <li>Page views and navigation behaviour</li>
+                  <li>Feature usage (e.g., bookings, teams, rankings)</li>
+                  <li>Error tracking</li>
+                </ul>
+                <p className="mt-4">We may use tools such as:</p>
+                <ul className="mt-4 list-disc space-y-2 pl-5">
+                  <li>Mixpanel</li>
+                </ul>
               </div>
-              <div className="text-xs text-secondary/60 bg-black/30 p-3 rounded">
-                <p><strong>Examples:</strong> Facebook Pixel, conversion tracking, retargeting</p>
-              </div>
-            </div>
 
-            {/* Preference Cookies */}
-            <div className="p-6 rounded-lg border border-background/60 bg-background/40 hover:border-primary/30 transition-colors">
-              <div className="flex items-start justify-between mb-4">
-                <div className="flex-1">
-                  <h3 className="text-lg font-semibold text-white mb-2">Preference Cookies</h3>
-                  <p className="text-sm text-secondary">
-                    Remember your preferences and settings (language, theme, login information) to personalize your experience on TACPLAY.
-                  </p>
-                </div>
-                <div className="ml-4">
-                  <input
-                    type="checkbox"
-                    checked={cookies.preferences}
-                    onChange={() => handleToggle("preferences")}
-                    className="w-6 h-6 accent-primary cursor-pointer"
-                  />
-                </div>
+              <div className="rounded-lg border border-background/60 bg-background/40 p-6">
+                <h3 className="mb-2 text-lg font-semibold text-white">3.3 Functional Cookies (Consent Required)</h3>
+                <p>These enhance your experience:</p>
+                <ul className="mt-4 list-disc space-y-2 pl-5">
+                  <li>Remembering preferences</li>
+                  <li>Language settings</li>
+                  <li>Saved filters (e.g., preferred fields or game types)</li>
+                </ul>
               </div>
-              <div className="text-xs text-secondary/60 bg-black/30 p-3 rounded">
-                <p><strong>Examples:</strong> Language preference, theme selection, user settings</p>
+
+              <div className="rounded-lg border border-background/60 bg-background/40 p-6">
+                <h3 className="mb-2 text-lg font-semibold text-white">3.4 Payment & Security Cookies (Strictly Necessary)</h3>
+                <p>Used during transactions:</p>
+                <ul className="mt-4 list-disc space-y-2 pl-5">
+                  <li>Fraud detection</li>
+                  <li>Payment session validation</li>
+                </ul>
+                <p className="mt-4">Payments are processed via:</p>
+                <ul className="mt-4 list-disc space-y-2 pl-5">
+                  <li>Stripe</li>
+                </ul>
+              </div>
+
+              <div className="rounded-lg border border-background/60 bg-background/40 p-6">
+                <h3 className="mb-2 text-lg font-semibold text-white">3.5 Marketing Cookies (Consent Required)</h3>
+                <p>(Only if implemented later)</p>
+                <p className="mt-4">Used to:</p>
+                <ul className="mt-4 list-disc space-y-2 pl-5">
+                  <li>Deliver relevant ads</li>
+                  <li>Track campaign performance</li>
+                </ul>
+                <p className="mt-4">These will only be activated with your explicit consent.</p>
               </div>
             </div>
           </section>
 
-          {/* Action Buttons */}
-          <section className="flex flex-col sm:flex-row gap-4 pt-6 border-t border-background/60">
-            <button
-              onClick={handleRejectAll}
-              className="flex-1 px-6 py-3 rounded-lg border border-secondary text-secondary hover:border-primary hover:text-primary transition-colors"
-            >
-              Reject All
-            </button>
-            <button
-              onClick={handleAcceptAll}
-              className="flex-1 px-6 py-3 rounded-lg bg-primary text-black font-semibold hover:bg-primary/90 transition-colors"
-            >
-              Accept All
-            </button>
-            <button
-              onClick={handleSave}
-              className="flex-1 px-6 py-3 rounded-lg bg-white/10 text-white hover:bg-white/20 border border-white/20 font-semibold transition-colors"
-            >
-              Save Preferences
-            </button>
+          <section>
+            <h2 className="mb-4 text-2xl font-bold text-white">4. HOW WE USE COOKIES</h2>
+            <p>We use cookies to:</p>
+            <ul className="mt-4 list-disc space-y-2 pl-5">
+              <li>Enable bookings and secure login</li>
+              <li>Improve platform performance</li>
+              <li>Analyse user behaviour</li>
+              <li>Personalise your experience</li>
+            </ul>
           </section>
 
-          {/* Additional Information */}
-          <section className="space-y-4 text-secondary mt-8 pt-8 border-t border-background/60">
-            <h2 className="text-2xl font-bold text-white">More Information</h2>
+          <section>
+            <h2 className="mb-4 text-2xl font-bold text-white">5. LEGAL BASIS FOR COOKIES</h2>
+            <p>Under EU law:</p>
+            <ul className="mt-4 list-disc space-y-2 pl-5">
+              <li>Strictly necessary cookies &rarr; do not require consent</li>
+              <li>All other cookies &rarr; require your prior consent</li>
+            </ul>
+            <p className="mt-4">You can withdraw consent at any time.</p>
+          </section>
 
-            <div>
-              <h3 className="text-lg font-semibold text-white mb-2">How to Manage Cookies</h3>
-              <p>
-                You can manage and delete cookies through your browser settings. Most browsers allow you to refuse cookies or alert you when cookies are being sent. Visit your browser&apos;s help section for more information.
-              </p>
+          <section>
+            <h2 className="mb-4 text-2xl font-bold text-white">6. COOKIE RETENTION</h2>
+            <p>Cookies are stored for different durations:</p>
+            <ul className="mt-4 list-disc space-y-2 pl-5">
+              <li>Session cookies &rarr; deleted when you close your browser</li>
+              <li>Persistent cookies &rarr; stored for a defined period (e.g., 30–365 days)</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2 className="mb-4 text-2xl font-bold text-white">7. MANAGING YOUR COOKIE PREFERENCES</h2>
+            <p>You can manage cookies by:</p>
+            <ul className="mt-4 list-disc space-y-2 pl-5">
+              <li>Using our cookie banner/settings tool</li>
+              <li>Adjusting browser settings</li>
+              <li>Deleting cookies manually</li>
+            </ul>
+            <p className="mt-4">Note: Disabling essential cookies may affect functionality.</p>
+
+            <div className="mt-8 space-y-6 rounded-lg border border-background/60 bg-background/40 p-6">
+              <h3 className="text-lg font-semibold text-white">Cookie Preferences</h3>
+
+              <div className="space-y-4">
+                <div className="p-4 rounded-lg border border-background/60 bg-black/20">
+                  <div className="flex items-start justify-between gap-4">
+                    <div className="flex-1">
+                      <h4 className="text-white font-semibold mb-1">Strictly Necessary</h4>
+                      <p className="text-sm text-secondary">Required for login, booking sessions, and platform security.</p>
+                    </div>
+                    <input
+                      type="checkbox"
+                      checked={cookies.necessary}
+                      disabled
+                      className="w-6 h-6 accent-primary cursor-not-allowed"
+                    />
+                  </div>
+                </div>
+
+                <div className="p-4 rounded-lg border border-background/60 bg-black/20 hover:border-primary/30 transition-colors">
+                  <div className="flex items-start justify-between gap-4">
+                    <div className="flex-1">
+                      <h4 className="text-white font-semibold mb-1">Performance & Analytics</h4>
+                      <p className="text-sm text-secondary">Helps us understand page usage, feature interactions, and errors.</p>
+                    </div>
+                    <input
+                      type="checkbox"
+                      checked={cookies.analytics}
+                      onChange={() => handleToggle("analytics")}
+                      className="w-6 h-6 accent-primary cursor-pointer"
+                    />
+                  </div>
+                </div>
+
+                <div className="p-4 rounded-lg border border-background/60 bg-black/20 hover:border-primary/30 transition-colors">
+                  <div className="flex items-start justify-between gap-4">
+                    <div className="flex-1">
+                      <h4 className="text-white font-semibold mb-1">Functional</h4>
+                      <p className="text-sm text-secondary">Remembers preferences, language settings, and saved filters.</p>
+                    </div>
+                    <input
+                      type="checkbox"
+                      checked={cookies.preferences}
+                      onChange={() => handleToggle("preferences")}
+                      className="w-6 h-6 accent-primary cursor-pointer"
+                    />
+                  </div>
+                </div>
+
+                <div className="p-4 rounded-lg border border-background/60 bg-black/20 hover:border-primary/30 transition-colors">
+                  <div className="flex items-start justify-between gap-4">
+                    <div className="flex-1">
+                      <h4 className="text-white font-semibold mb-1">Marketing</h4>
+                      <p className="text-sm text-secondary">Only enabled later if marketing tools are implemented.</p>
+                    </div>
+                    <input
+                      type="checkbox"
+                      checked={cookies.marketing}
+                      onChange={() => handleToggle("marketing")}
+                      className="w-6 h-6 accent-primary cursor-pointer"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <section className="flex flex-col gap-4 pt-4 border-t border-background/60 sm:flex-row">
+                <button
+                  onClick={handleRejectAll}
+                  className="flex-1 rounded-lg border border-secondary px-6 py-3 text-secondary transition-colors hover:border-primary hover:text-primary"
+                >
+                  Reject All
+                </button>
+                <button
+                  onClick={handleAcceptAll}
+                  className="flex-1 rounded-lg bg-primary px-6 py-3 font-semibold text-black transition-colors hover:bg-primary/90"
+                >
+                  Accept All
+                </button>
+                <button
+                  onClick={handleSave}
+                  className="flex-1 rounded-lg border border-white/20 bg-white/10 px-6 py-3 font-semibold text-white transition-colors hover:bg-white/20"
+                >
+                  Save Preferences
+                </button>
+              </section>
             </div>
+          </section>
+
+          <section className="space-y-4 text-secondary pt-8 border-t border-background/60">
+            <h2 className="text-2xl font-bold text-white">8. THIRD-PARTY COOKIES</h2>
+            <p>Some cookies are set by third parties, including:</p>
+            <ul className="mt-4 list-disc space-y-2 pl-5">
+              <li>Stripe</li>
+              <li>Mixpanel</li>
+            </ul>
+            <p className="mt-4">These providers process data in accordance with their own privacy policies.</p>
 
             <div>
-              <h3 className="text-lg font-semibold text-white mb-2">Cookie Retention</h3>
-              <p>
-                Most cookies are automatically deleted after a set period (typically 1-2 years). Session cookies are deleted when you close your browser.
-              </p>
-            </div>
-
-            <div>
-              <h3 className="text-lg font-semibold text-white mb-2">Third-Party Cookies</h3>
-              <p>
-                Some cookies are set by third parties (like analytics providers and advertisers). We do not control these cookies directly, but we require all third parties to comply with privacy regulations.
-              </p>
-            </div>
-
-            <div>
-              <h3 className="text-lg font-semibold text-white mb-2">Privacy & GDPR</h3>
+              <h3 className="mb-2 text-lg font-semibold text-white">Privacy & GDPR</h3>
               <p>
                 TACPLAY complies with GDPR and ePrivacy regulations. We only store non-essential cookies with your explicit consent. For more details, see our <Link href="/privacy" className="text-primary hover:underline">Privacy Policy</Link>.
               </p>
             </div>
+          </section>
 
-            <div className="mt-8 p-6 bg-background/40 rounded-lg border border-background/60">
-              <h3 className="text-lg font-semibold text-white mb-2">Questions?</h3>
+          <section className="space-y-4 text-secondary pt-8 border-t border-background/60">
+            <h2 className="text-2xl font-bold text-white">9. CHANGES TO THIS POLICY</h2>
+            <p>We may update this Cookie Policy periodically.</p>
+            <p className="mt-4">Changes will be communicated via:</p>
+            <ul className="mt-4 list-disc space-y-2 pl-5">
+              <li>Website/app notification</li>
+              <li>Updated &ldquo;Last Updated&rdquo; date</li>
+            </ul>
+          </section>
+
+          <section className="space-y-4 text-secondary pt-8 border-t border-background/60">
+            <h2 className="text-2xl font-bold text-white">10. CONTACT</h2>
+            <p>For questions about cookies:</p>
+            <div className="rounded-lg border border-background/60 bg-background/40 p-6">
               <p>
-                If you have questions about our cookie practices, contact us at{" "}
-                <a href="mailto:privacy@tacplay.eu" className="text-primary hover:underline">
-                  privacy@tacplay.eu
-                </a>
+                Email: <a href="mailto:info@tacplay.eu" className="text-primary hover:underline">info@tacplay.eu</a>
               </p>
             </div>
           </section>

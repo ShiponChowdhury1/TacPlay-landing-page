@@ -9,159 +9,263 @@ const PrivacyPolicy = () => {
       <div className="mx-auto max-w-4xl px-4 py-12 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="mb-12">
-          <Link href="#" className="text-primary hover:text-primary/80 mb-6 inline-block">
+          <Link href="/" className="text-primary hover:text-primary/80 mb-6 inline-block">
             ← Back
           </Link>
-          <h1 className="text-4xl font-bold text-white mb-2">Privacy Policy</h1>
-          <p className="text-secondary">Last updated: May 2026</p>
+          <h1 className="mb-2 text-4xl font-bold text-white">Privacy Policy</h1>
+          <p className="text-secondary">Last Updated: 1st May 2026</p>
         </div>
 
         {/* Content */}
         <div className="space-y-8 text-secondary">
-          {/* Section 1 */}
           <section>
-            <h2 className="text-2xl font-bold text-white mb-4">1. Introduction</h2>
+            <h2 className="mb-4 text-2xl font-bold text-white">1. INTRODUCTION</h2>
             <p>
-              TACPLAY (&quot;Company,&quot; &quot;we,&quot; or &quot;us&quot;) is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website and use our services.
+              This Privacy Policy explains how TACPLAY (&ldquo;we&rdquo;, &ldquo;us&rdquo;, &ldquo;our&rdquo;) collects, uses, and protects your personal data when you use our website, mobile application, and services (the &ldquo;Platform&rdquo;).
             </p>
-            <p className="mt-4">
-              Please read this Privacy Policy carefully. If you do not agree with our policies and practices, please do not use our services.
-            </p>
+            <p className="mt-4">We are committed to protecting your personal data in accordance with:</p>
+            <ul className="mt-4 list-disc space-y-2 pl-5">
+              <li>General Data Protection Regulation</li>
+              <li>Applicable national data protection laws within the EU/EEA</li>
+            </ul>
+            <p className="mt-4">By using TACPLAY, you agree to the processing of your personal data as described in this Policy.</p>
           </section>
 
-          {/* Section 2 */}
           <section>
-            <h2 className="text-2xl font-bold text-white mb-4">2. Information We Collect</h2>
-            <div className="space-y-4">
+            <h2 className="mb-4 text-2xl font-bold text-white">2. DATA CONTROLLER</h2>
+            <p>The data controller responsible for your personal data is:</p>
+            <div className="mt-4 rounded-lg border border-background/60 bg-background/40 p-6">
+              <p className="font-semibold text-white">TACPLAY EUROPE S.L.</p>
+              <p>Avenida de la Encarnacion 13, 29640 Fuengirola, Spain</p>
+              <p>
+                Email: <a href="mailto:privacy@tacplay.eu" className="text-primary hover:underline">privacy@tacplay.eu</a>
+              </p>
+            </div>
+          </section>
+
+          <section>
+            <h2 className="mb-4 text-2xl font-bold text-white">3. PERSONAL DATA WE COLLECT</h2>
+            <p>We collect the following categories of personal data:</p>
+
+            <div className="mt-6 space-y-5">
               <div>
-                <h3 className="text-lg font-semibold text-white mb-2">2.1 Personal Information</h3>
-                <p>
-                  We collect information that you voluntarily provide to us, including:
-                </p>
-                <ul className="mt-2 ml-4 space-y-1 list-disc list-inside">
-                  <li>Name and contact information (email, phone number)</li>
-                  <li>Account credentials and login information</li>
-                  <li>Payment information and billing address</li>
-                  <li>Field or player profile details</li>
-                  <li>Game booking and booking history</li>
+                <h3 className="mb-2 text-lg font-semibold text-white">3.1 Account Information</h3>
+                <ul className="list-disc space-y-2 pl-5">
+                  <li>Full name</li>
+                  <li>Email address</li>
+                  <li>Phone number</li>
+                  <li>Username / profile details</li>
+                  <li>Password (encrypted)</li>
                 </ul>
               </div>
 
               <div>
-                <h3 className="text-lg font-semibold text-white mb-2">2.2 Automatically Collected Information</h3>
-                <p>
-                  When you access TACPLAY, we automatically collect:
-                </p>
-                <ul className="mt-2 ml-4 space-y-1 list-disc list-inside">
-                  <li>Device information (type, operating system, browser)</li>
-                  <li>IP address and location data</li>
-                  <li>Usage data and interaction patterns</li>
-                  <li>Cookies and similar tracking technologies</li>
+                <h3 className="mb-2 text-lg font-semibold text-white">3.2 Booking & Activity Data</h3>
+                <ul className="list-disc space-y-2 pl-5">
+                  <li>Game bookings and participation</li>
+                  <li>Team membership and activity</li>
+                  <li>Field preferences and history</li>
+                  <li>Rankings and performance data</li>
+                </ul>
+              </div>
+
+              <div>
+                <h3 className="mb-2 text-lg font-semibold text-white">3.3 Payment Information</h3>
+                <ul className="list-disc space-y-2 pl-5">
+                  <li>Payment status and transaction IDs</li>
+                  <li>Subscription status</li>
+                </ul>
+                <p className="mt-4 font-semibold text-white">Important:</p>
+                <p>Payments are processed by third parties (e.g., Stripe).</p>
+                <p>We do not store full card details.</p>
+              </div>
+
+              <div>
+                <h3 className="mb-2 text-lg font-semibold text-white">3.4 Device & Technical Data</h3>
+                <ul className="list-disc space-y-2 pl-5">
+                  <li>IP address</li>
+                  <li>Device type and operating system</li>
+                  <li>Browser type</li>
+                  <li>App usage data (analytics)</li>
+                </ul>
+              </div>
+
+              <div>
+                <h3 className="mb-2 text-lg font-semibold text-white">3.5 Communication Data</h3>
+                <ul className="list-disc space-y-2 pl-5">
+                  <li>Emails and messages sent via the Platform</li>
+                  <li>Customer support requests</li>
                 </ul>
               </div>
             </div>
           </section>
 
-          {/* Section 3 */}
           <section>
-            <h2 className="text-2xl font-bold text-white mb-4">3. How We Use Your Information</h2>
-            <p>We use the information we collect to:</p>
-            <ul className="mt-4 ml-4 space-y-2 list-disc list-inside">
-              <li>Provide and improve our services</li>
-              <li>Process bookings and payments</li>
-              <li>Send transactional and promotional communications</li>
-              <li>Detect and prevent fraud</li>
-              <li>Comply with legal obligations</li>
-              <li>Analyze usage and optimize user experience</li>
-              <li>Connect players with fields and teams</li>
+            <h2 className="mb-4 text-2xl font-bold text-white">4. HOW WE USE YOUR DATA (LEGAL BASIS)</h2>
+            <p>We process your data based on the following legal grounds under GDPR:</p>
+
+            <div className="mt-6 space-y-5">
+              <div>
+                <h3 className="mb-2 text-lg font-semibold text-white">4.1 Contractual Necessity</h3>
+                <p>To:</p>
+                <ul className="mt-2 list-disc space-y-2 pl-5">
+                  <li>Create and manage your account</li>
+                  <li>Process bookings and payments</li>
+                  <li>Facilitate communication between Players and Field Owners</li>
+                </ul>
+              </div>
+
+              <div>
+                <h3 className="mb-2 text-lg font-semibold text-white">4.2 Legitimate Interests</h3>
+                <p>To:</p>
+                <ul className="mt-2 list-disc space-y-2 pl-5">
+                  <li>Improve platform functionality</li>
+                  <li>Prevent fraud and abuse</li>
+                  <li>Analyse usage and performance</li>
+                </ul>
+              </div>
+
+              <div>
+                <h3 className="mb-2 text-lg font-semibold text-white">4.3 Legal Obligations</h3>
+                <p>To:</p>
+                <ul className="mt-2 list-disc space-y-2 pl-5">
+                  <li>Comply with tax and accounting laws</li>
+                  <li>Respond to legal requests</li>
+                </ul>
+              </div>
+
+              <div>
+                <h3 className="mb-2 text-lg font-semibold text-white">4.4 Consent</h3>
+                <p>Where required, for:</p>
+                <ul className="mt-2 list-disc space-y-2 pl-5">
+                  <li>Marketing communications</li>
+                  <li>Cookies and tracking technologies</li>
+                </ul>
+                <p className="mt-4">You may withdraw consent at any time.</p>
+              </div>
+            </div>
+          </section>
+
+          <section>
+            <h2 className="mb-4 text-2xl font-bold text-white">5. HOW WE SHARE YOUR DATA</h2>
+            <p>We only share your data when necessary:</p>
+
+            <div className="mt-6 space-y-5">
+              <div>
+                <h3 className="mb-2 text-lg font-semibold text-white">5.1 With Field Owners</h3>
+                <ul className="list-disc space-y-2 pl-5">
+                  <li>Booking details</li>
+                  <li>Player name and contact info (where required)</li>
+                </ul>
+              </div>
+
+              <div>
+                <h3 className="mb-2 text-lg font-semibold text-white">5.2 With Service Providers</h3>
+                <p>Including:</p>
+                <ul className="mt-2 list-disc space-y-2 pl-5">
+                  <li>Stripe (payments)</li>
+                  <li>Cloud hosting providers</li>
+                  <li>Analytics providers (e.g., Mixpanel)</li>
+                </ul>
+                <p className="mt-4">All providers are GDPR-compliant and act under data processing agreements.</p>
+              </div>
+
+              <div>
+                <h3 className="mb-2 text-lg font-semibold text-white">5.3 Legal Authorities</h3>
+                <p>If required by law or to protect rights, safety, or prevent fraud.</p>
+              </div>
+            </div>
+          </section>
+
+          <section>
+            <h2 className="mb-4 text-2xl font-bold text-white">6. INTERNATIONAL DATA TRANSFERS</h2>
+            <p>Some service providers may process data outside the EU/EEA.</p>
+            <p className="mt-4">In such cases, we ensure safeguards such as:</p>
+            <ul className="mt-4 list-disc space-y-2 pl-5">
+              <li>Standard Contractual Clauses (SCCs)</li>
+              <li>Adequacy decisions by the European Commission</li>
             </ul>
           </section>
 
-          {/* Section 4 */}
           <section>
-            <h2 className="text-2xl font-bold text-white mb-4">4. Data Sharing and Disclosure</h2>
-            <p>
-              We do not sell your personal data. However, we may share information with:
-            </p>
-            <ul className="mt-4 ml-4 space-y-2 list-disc list-inside">
-              <li><strong>Service Providers:</strong> Payment processors (Stripe), analytics tools, hosting providers</li>
-              <li><strong>Field Owners & Players:</strong> Booking information necessary to facilitate games</li>
-              <li><strong>Legal Requirements:</strong> When required by law or in response to legal requests</li>
-              <li><strong>Business Transfers:</strong> In case of merger, acquisition, or sale of assets</li>
+            <h2 className="mb-4 text-2xl font-bold text-white">7. DATA RETENTION</h2>
+            <p>We retain personal data only as long as necessary:</p>
+            <ul className="mt-4 list-disc space-y-2 pl-5">
+              <li>Account data: Until account deletion</li>
+              <li>Booking/payment data: Up to 6–10 years (legal/tax compliance)</li>
+              <li>Marketing data: Until consent is withdrawn</li>
             </ul>
           </section>
 
-          {/* Section 5 */}
           <section>
-            <h2 className="text-2xl font-bold text-white mb-4">5. Data Security</h2>
-            <p>
-              We implement industry-standard security measures to protect your data, including:
-            </p>
-            <ul className="mt-4 ml-4 space-y-2 list-disc list-inside">
-              <li>SSL/TLS encryption for data in transit</li>
-              <li>Secure payment processing via Stripe</li>
-              <li>Regular security audits and monitoring</li>
-              <li>Restricted access to sensitive information</li>
-            </ul>
-            <p className="mt-4">
-              However, no method of transmission is 100% secure. While we strive to protect your information, we cannot guarantee absolute security.
-            </p>
-          </section>
-
-          {/* Section 6 */}
-          <section>
-            <h2 className="text-2xl font-bold text-white mb-4">6. Your Rights and Choices</h2>
-            <p>
-              Under GDPR and similar regulations, you have the right to:
-            </p>
-            <ul className="mt-4 ml-4 space-y-2 list-disc list-inside">
+            <h2 className="mb-4 text-2xl font-bold text-white">8. YOUR RIGHTS UNDER GDPR</h2>
+            <p>Under the General Data Protection Regulation, you have the right to:</p>
+            <ul className="mt-4 list-disc space-y-2 pl-5">
               <li>Access your personal data</li>
-              <li>Correct inaccurate information</li>
-              <li>Request deletion of your data</li>
-              <li>Opt-out of marketing communications</li>
-              <li>Restrict how your data is processed</li>
-              <li>Request a copy of your data (data portability)</li>
+              <li>Rectify inaccurate data</li>
+              <li>Erase your data (&ldquo;Right to be forgotten&rdquo;)</li>
+              <li>Restrict processing</li>
+              <li>Data portability</li>
+              <li>Object to processing</li>
+              <li>Withdraw consent at any time</li>
             </ul>
             <p className="mt-4">
-              To exercise these rights, contact us at <a href="mailto:privacy@tacplay.eu" className="text-primary hover:underline">privacy@tacplay.eu</a>.
+              To exercise your rights, contact: <a href="mailto:privacy@tacplay.eu" className="text-primary hover:underline">privacy@tacplay.eu</a>
             </p>
           </section>
 
-          {/* Section 7 */}
           <section>
-            <h2 className="text-2xl font-bold text-white mb-4">7. Cookies and Tracking</h2>
-            <p>
-              We use cookies and similar technologies to enhance your experience. You can manage your cookie preferences through your browser settings or by visiting our Cookie Settings page.
-            </p>
+            <h2 className="mb-4 text-2xl font-bold text-white">9. COOKIES AND TRACKING</h2>
+            <p>We use cookies and similar technologies to:</p>
+            <ul className="mt-4 list-disc space-y-2 pl-5">
+              <li>Ensure platform functionality</li>
+              <li>Analyse usage</li>
+              <li>Improve performance</li>
+            </ul>
+            <p className="mt-4">You can manage cookies via your browser or our Cookie Banner.</p>
+            <p className="mt-2">(See separate Cookie Policy for full details.)</p>
           </section>
 
-          {/* Section 8 */}
           <section>
-            <h2 className="text-2xl font-bold text-white mb-4">8. Data Retention</h2>
-            <p>
-              We retain your personal data for as long as necessary to provide our services, comply with legal obligations, and resolve disputes. You may request deletion of your data at any time, subject to legal requirements.
-            </p>
+            <h2 className="mb-4 text-2xl font-bold text-white">10. DATA SECURITY</h2>
+            <p>We implement appropriate technical and organisational measures, including:</p>
+            <ul className="mt-4 list-disc space-y-2 pl-5">
+              <li>Encryption of sensitive data</li>
+              <li>Secure servers and hosting</li>
+              <li>Access control and authentication</li>
+              <li>Regular monitoring for vulnerabilities</li>
+            </ul>
           </section>
 
-          {/* Section 9 */}
           <section>
-            <h2 className="text-2xl font-bold text-white mb-4">9. GDPR Compliance</h2>
-            <p>
-              TACPLAY is GDPR-compliant. We process personal data lawfully, fairly, and transparently. Your personal data is only processed with a valid legal basis (consent, contract, legal obligation, or legitimate interests).
-            </p>
+            <h2 className="mb-4 text-2xl font-bold text-white">11. CHILDREN&apos;S DATA</h2>
+            <p>TACPLAY is not intended for children under 16 without parental consent.</p>
+            <p className="mt-4">If we become aware of unlawful data collection from minors, we will delete it.</p>
           </section>
 
-          {/* Section 10 */}
           <section>
-            <h2 className="text-2xl font-bold text-white mb-4">10. Contact Us</h2>
-            <p>
-              If you have questions about this Privacy Policy or our data practices, please contact us:
+            <h2 className="mb-4 text-2xl font-bold text-white">12. THIRD-PARTY LINKS</h2>
+            <p>Our Platform may contain links to third-party websites.</p>
+            <p className="mt-4">We are not responsible for their privacy practices.</p>
+          </section>
+
+          <section>
+            <h2 className="mb-4 text-2xl font-bold text-white">13. CHANGES TO THIS POLICY</h2>
+            <p>We may update this Privacy Policy periodically.</p>
+            <p className="mt-4">Users will be notified via:</p>
+            <ul className="mt-4 list-disc space-y-2 pl-5">
+              <li>Email</li>
+              <li>Platform notifications</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2 className="mb-4 text-2xl font-bold text-white">14. CONTACT & COMPLAINTS</h2>
+            <p>For privacy-related questions:</p>
+            <p className="mt-4">
+              Email: <a href="mailto:privacy@tacplay.eu" className="text-primary hover:underline">privacy@tacplay.eu</a>
             </p>
-            <div className="mt-4 p-6 bg-background/40 rounded-lg border border-background/60">
-              <p className="font-semibold text-white mb-2">TACPLAY Privacy Team</p>
-              <p>Email: <a href="mailto:privacy@tacplay.eu" className="text-primary hover:underline">privacy@tacplay.eu</a></p>
-              <p>Phone: <a href="tel:+34623295692" className="text-primary hover:underline">+34 623 295 692</a></p>
-            </div>
+            <p className="mt-4">You also have the right to lodge a complaint with your local data protection authority.</p>
           </section>
         </div>
       </div>

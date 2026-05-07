@@ -1,6 +1,5 @@
 /** @format */
 
-import Image from "next/image";
 import SectionHeading from "@/components/CommonComponents/SectionHeading";
 import {
   MotionReveal,
@@ -11,27 +10,21 @@ import {
 const steps = [
   {
     number: "1",
-    title: "Explore Fields",
+    title: "Create & Verify",
     description:
-      "Browse paintball arenas near you, view available sessions, and find the perfect match based on location and time.",
+      "Start by creating your account and setting up your profile. Upload required details and get verified to unlock full platform access. Once approved, you’re ready to explore matches, teams, and fields.",
   },
   {
     number: "2",
-    title: "Choose a Session",
+    title: "Subscribe & Access",
     description:
-      "Check session details including match type, available slots, and team requirements before joining the game.",
+      "Choose your plan to unlock features like ranked matches and team creation. Browse available sessions, join a team, and book your slot. Premium users get access to rankings, advanced stats, and priority features.",
   },
   {
     number: "3",
-    title: "Book Your Spot",
+    title: "Work & Track",
     description:
-      "Secure your place in seconds with quick booking and instant confirmation for your selected session.",
-  },
-  {
-    number: "4",
-    title: "Play & Climb the Rankings",
-    description:
-      "Compete in matches, track your performance, and move up the leaderboard as you win ranked games.",
+      "Join your scheduled match and play at your selected field. Field owners submit match results, and rankings update automatically. Track your performance, match history, and leaderboard progress in real-time.",
   },
 ];
 
@@ -39,158 +32,69 @@ const HowItWorksSections = () => {
   return (
     <section
       id="how-it-works"
-      className="relative w-full overflow-hidden bg-transparent py-16 sm:py-20 lg:py-28"
+      className="relative w-full overflow-hidden bg-transparent  py-16 sm:py-20 lg:py-28"
     >
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <MotionReveal>
+
+       <MotionReveal>
           <SectionHeading
-            title="From Finding a Field to Winning the Match — Here's How"
+            title="How It Works"
             description="A simple flow to connect players, field owners, and teams without adding extra friction to the process."
-            className="max-w-4xl"
+            className="max-w-4xl text-center"
+            descriptionClassName="mx-auto"
           />
         </MotionReveal>
+        
 
-        {/* Desktop layout: 4 cards around center phone with connecting lines */}
-        <div className="relative mt-12 hidden lg:block" style={{ minHeight: "600px" }}>
-          <MotionStagger className="relative w-full" style={{ minHeight: "600px" }}>
+        {/* Steps */}
+        <div className="relative mt-8 md:mt-16">
 
-            {/* === Left Column Cards === */}
+          {/* Dashed connector line (desktop only) */}
+          <div
+            className="absolute top-[28px] hidden md:block"
+            style={{
+              left: "calc(16.666% + 24px)",
+              right: "calc(16.666% + 24px)",
+              height: "2px",
+              backgroundImage:
+                "repeating-linear-gradient(to right, #c8a020 0px, #c8a020 10px, transparent 10px, transparent 18px)",
+            }}
+          />
 
-            {/* Card 1 — Top Left */}
-            <MotionStaggerItem
-              className="absolute"
-              style={{ top: "0px", left: "0px", width: "280px" }}
-            >
-              <StepCard step={steps[0]} />
-            </MotionStaggerItem>
+          <MotionStagger className="grid gap-12 md:grid-cols-3 md:gap-6">
+            {steps.map((step) => (
+              <MotionStaggerItem key={step.number} className="relative text-center">
 
-            {/* Card 2 — Bottom Left */}
-            <MotionStaggerItem
-              className="absolute"
-              style={{ bottom: "0px", left: "0px", width: "280px" }}
-            >
-              <StepCard step={steps[1]} />
-            </MotionStaggerItem>
-
-            {/* === Center Phone with connecting lines === */}
-            <MotionStaggerItem
-              className="absolute left-1/2 top-1/2"
-              style={{ transform: "translate(-50%, -50%)" }}
-            >
-              <div className="relative">
-                {/* Left line image — connects left cards to phone */}
-                <div
-                  className="absolute pointer-events-none"
-                  style={{
-                    top: "50%",
-                    right: "100%",
-                    transform: "translateY(-50%)",
-                    width: "180px",
-                    height: "400px",
-                    marginRight: "-10px",
-                  }}
-                >
-                  <Image
-                    src="/images/left-line.png"
-                    alt=""
-                    fill
-                    className="object-contain"
-                    aria-hidden="true"
-                  />
+                {/* Circle */}
+                <div className="relative z-10 mb-6 flex justify-center">
+                  <div
+                    className="flex h-14 w-14 items-center justify-center rounded-full text-xl font-bold text-white"
+                    style={{
+                      background: "radial-gradient(circle at 40% 35%, #e84040, #b01818)",
+                      boxShadow: "0 0 0 3px #1a1a1a, 0 0 0 5px #b01818",
+                    }}
+                  >
+                    {step.number}
+                  </div>
                 </div>
 
-                {/* Right line image — connects right cards to phone */}
-                <div
-                  className="absolute pointer-events-none"
-                  style={{
-                    top: "50%",
-                    left: "100%",
-                    transform: "translateY(-50%)",
-                    width: "180px",
-                    height: "400px",
-                    marginLeft: "-10px",
-                  }}
-                >
-                  <Image
-                    src="/images/right-line.png"
-                    alt=""
-                    fill
-                    className="object-contain"
-                    aria-hidden="true"
-                  />
-                </div>
+                {/* Title */}
+                <h3 className="mb-3 text-xl font-bold text-white sm:text-2xl">
+                  {step.title}
+                </h3>
 
-                {/* Phone mockup */}
-                <div className="relative w-[240px] h-[480px]">
-                  <Image
-                    src="/images/form-finding-phone.png"
-                    alt="TacPlay app preview"
-                    fill
-                    className="object-contain drop-shadow-[0_20px_40px_rgba(0,0,0,0.5)]"
-                  />
-                </div>
-              </div>
-            </MotionStaggerItem>
+                {/* Description */}
+                <p className="mx-auto max-w-xs text-sm leading-7 text-gray-400 sm:text-[15px]">
+                  {step.description}
+                </p>
 
-            {/* === Right Column Cards === */}
-
-            {/* Card 3 — Top Right */}
-            <MotionStaggerItem
-              className="absolute"
-              style={{ top: "0px", right: "0px", width: "280px" }}
-            >
-              <StepCard step={steps[2]} />
-            </MotionStaggerItem>
-
-            {/* Card 4 — Bottom Right */}
-            <MotionStaggerItem
-              className="absolute"
-              style={{ bottom: "0px", right: "0px", width: "280px" }}
-            >
-              <StepCard step={steps[3]} />
-            </MotionStaggerItem>
-
+              </MotionStaggerItem>
+            ))}
           </MotionStagger>
         </div>
 
-        {/* Mobile layout: cards only, no phone image */}
-        <div className="mt-10 lg:hidden">
-          <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
-            {steps.map((step) => (
-              <StepCard key={step.number} step={step} />
-            ))}
-          </div>
-        </div>
       </div>
     </section>
-  );
-};
-
-/* Step Card Component */
-const StepCard = ({
-  step,
-}: {
-  step: { number: string; title: string; description: string };
-}) => {
-  return (
-    <article
-      className="rounded-[20px] border border-[#1E1C2B] p-6"
-      style={{ background: "#100F17" }}
-    >
-      {/* Step number badge */}
-      <div
-        className="mb-4 flex h-10 w-10 items-center justify-center rounded-lg text-base font-bold text-white"
-        style={{
-          background: "linear-gradient(135deg, #e84040, #b01818)",
-          border: "2px solid rgba(255,255,255,0.1)",
-        }}
-      >
-        {step.number}
-      </div>
-
-      <h3 className="mb-2 text-lg font-bold text-white">{step.title}</h3>
-      <p className="text-sm leading-6 text-[#a7abc6]">{step.description}</p>
-    </article>
   );
 };
 

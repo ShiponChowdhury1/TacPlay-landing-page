@@ -80,8 +80,8 @@ const FeaturesSections = () => {
           <SectionHeading
             title="Platform Features"
             description="Everything players and field owners need to organize matches, manage bookings, and keep the experience polished across every device."
-            className="max-w-4xl"
-            descriptionClassName="max-w-3xl"
+            className="max-w-4xl text-center"
+            descriptionClassName="max-w-3xl mx-auto"
           />
         </MotionReveal>
 
@@ -181,15 +181,7 @@ const FeatureCard = ({
       <p className="mt-2 text-sm leading-6 text-[#a7abc6] sm:text-[14px]">
         {description}
       </p>
-      <div className="mt-auto pt-3 inline-flex items-center gap-2 text-sm font-medium text-white/55 transition-colors group-hover:text-white">
-        Learn More
-        <span
-          aria-hidden="true"
-          className="transition-transform group-hover:translate-x-0.5"
-        >
-          →
-        </span>
-      </div>
+     
     </article>
   );
 };

@@ -74,13 +74,13 @@ const NavBar = () => {
             asChild
             className="h-10 rounded-lg bg-gray-900 border border-gray-500 px-6 text-base font-bold text-white shadow-[0_8px_18px_rgba(175,141,78,0.28)] hover:bg-[#9f8046]!"
           >
-            <Link href="/">Install</Link>
+            <Link href="https://fields.tacplay.eu/sign-in?redirect=%2F">Login</Link>
           </Button>
           <Button
             asChild
             className="h-10 rounded-lg bg-button-bg px-6 text-base font-bold text-black shadow-[0_8px_18px_rgba(175,141,78,0.28)] hover:bg-[#9f8046]!"
           >
-            <Link href="https://fields.tacplay.eu">Get Started</Link>
+            <Link href="https://fields.tacplay.eu/sign-up">Owner Registration</Link>
           </Button>
         </div>
 
@@ -117,9 +117,15 @@ const NavBar = () => {
 
               <Button
                 asChild
+                className="mt-2 h-10 rounded-2xl bg-gray-700 border border-gray-600 text-[15px] font-medium text-white hover:bg-gray-600"
+              >
+                <Link href="https://fields.tacplay.eu/sign-in?redirect=%2F">Login</Link>
+              </Button>
+              <Button
+                asChild
                 className="mt-2 h-10 rounded-2xl bg-button-bg text-[15px] font-medium text-black! hover:bg-[#9f8046]"
               >
-                <Link href="/get-started">Get Started</Link>
+                <Link href="https://fields.tacplay.eu/sign-up">Owner Registration</Link>
               </Button>
             </div>
           </DialogContent>

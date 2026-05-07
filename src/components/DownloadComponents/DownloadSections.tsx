@@ -20,6 +20,7 @@ const DownloadSections = () => {
             title="Download TACPLAY & Start Competing Today"
             description="Discover paintball fields, book sessions instantly, compete in ranked matches, and track your performance — all in one powerful platform."
             className="text-center"
+            descriptionClassName="mx-auto"
           />
         </MotionReveal>
 
@@ -107,7 +108,7 @@ const DownloadSections = () => {
             {/* decorative bottom curve under the phone mockup */}
             <div className="relative w-full max-w-[320px] sm:max-w-[540px] md:max-w-[700px] lg:max-w-[900px] xl:max-w-[1000px]">
               <Image
-                src="/images/download-banner.png"
+                src="/images/download.svg"
                 alt="TACPLAY app screens — map, dashboard, and settings"
                 width={1000}
                 height={1200}

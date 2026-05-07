@@ -34,7 +34,7 @@ const HeroSection = () => {
               <div className="flex items-center gap-3">
                 Where{" "}
                 <Image
-                  src="/images/hero-name.png"
+                  src="/images/hero-name1.png"
                   alt="Paintball"
                   width={320}
                   height={320}

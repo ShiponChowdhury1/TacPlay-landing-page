@@ -21,8 +21,10 @@ const SectionHeading = ({
   titleClassName,
   descriptionClassName,
 }: SectionHeadingProps) => {
+  const isLeftAligned = className?.includes("text-left");
+
   return (
-    <div className={cn("mx-auto max-w-4xl text-center", className)}>
+    <div className={cn("mx-auto max-w-4xl", className)}>
       {semiTitle && (
         <p className="text-[11px] font-semibold tracking-[0.18em] text-button-bg uppercase md:text-[13px]">
           {semiTitle}
@@ -40,7 +42,7 @@ const SectionHeading = ({
       {description && (
         <p
           className={cn(
-            "mt-2 md:mt-4 max-w-2xl mx-auto text-base text-center leading-7 text-secondary sm:text-lg md:text-xl",
+            "mt-2 md:mt-4 max-w-2xl text-base leading-7 text-secondary sm:text-lg md:text-xl",
             descriptionClassName,
           )}
         >
@@ -48,18 +50,20 @@ const SectionHeading = ({
         </p>
       )}
       <MotionReveal
-                  delay={0.14}
-                  className="mt-8 flex w-full flex-col items-center justify-center gap-3 sm:w-auto sm:flex-row"
-                >
-                  <Image
-                    src="/images/heading-up.png"
-                    alt="Players icon"
-                    width={500}
-                    height={500}
-                    className="h-6 w-90 md:h-8 md:w-80 lg:h-8 lg:w-150"
-                  />
-                  
-                </MotionReveal>
+        delay={0.14}
+        className={cn(
+          "mt-8 flex w-full flex-col gap-3 sm:w-auto sm:flex-row",
+          isLeftAligned ? "items-start" : "items-center justify-center"
+        )}
+      >
+        <Image
+          src="/images/heading-up.png"
+          alt="Players icon"
+          width={500}
+          height={500}
+          className="h-6 w-90 md:h-8 md:w-80 lg:h-8 lg:w-150"
+        />
+      </MotionReveal>
     </div>
   );
 };

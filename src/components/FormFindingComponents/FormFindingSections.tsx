@@ -49,8 +49,8 @@ const FormFindingSections = () => {
           <SectionHeading
             title="From Finding a Field to Winning the Match - Here’s How"
             description="Discover paintball arenas, book sessions instantly, join matches with other players, and climb the global rankings all in one seamless experience."
-            className="max-w-4xl"
-            descriptionClassName="max-w-4xl"
+            className="max-w-4xl text-center"
+            descriptionClassName="max-w-4xl mx-auto"
           />
         </MotionReveal>
 

@@ -56,8 +56,8 @@ const ManagementSections = () => {
           <SectionHeading
             title="How TACPLAY Simplifies Paintball Management"
             description="From hosting sessions to managing bookings and tracking performance, TACPLAY gives field owners and players everything they need in one platform."
-            className="max-w-4xl"
-            descriptionClassName="max-w-3xl"
+            className="max-w-4xl text-center"
+            descriptionClassName="max-w-3xl mx-auto"
           />
         </MotionReveal>
 
@@ -73,7 +73,7 @@ const ManagementSections = () => {
               <article className="group p-4 md:p-8 h-full overflow-hidden rounded-[calc(1.7rem-1.5px)] bg-[linear-gradient(180deg,rgba(11,14,28,0.98)_0%,rgba(7,9,19,0.98)_100%)] shadow-[0_20px_56px_rgba(0,0,0,0.5)]">
                 <div className="relative p-2 rounded-xl bg-black border-t border-l border-r border-gray-700 aspect-video w-full overflow-hidden">
                   <Image
-                    src="/images/paintball-management-1.png"
+                    src="/images/paintball-management-1.svg"
                     alt="Manage Your Field Dashboard"
                     width={2000}
                     height={3000}
